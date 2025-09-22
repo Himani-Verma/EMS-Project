@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  functions = ".next/server/pages/api"
+  functions = ".next/server/app/api"
 
 [build.environment]
   NODE_VERSION = "18"
