@@ -8,7 +8,11 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Removed rewrites - using Next.js API routes instead
+  // Configure for Netlify deployment
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
   serverExternalPackages: ['bcryptjs']
 };
 

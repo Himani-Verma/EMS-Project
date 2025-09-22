@@ -1,16 +1,10 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  functions = ".next/server/app/api"
 
 [build.environment]
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api/:splat"
-  status = 200
 
 [[redirects]]
   from = "/*"
